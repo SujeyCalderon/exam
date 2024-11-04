@@ -1,0 +1,24 @@
+<div *ngIf="pokemon" class="pokemon-details">
+    <h1 class="pokemon-name">{{ pokemon.name | titlecase }}</h1>
+    
+    <div class="pokemon-images">
+      <img *ngIf="pokemon.sprites" [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" class="pokemon-image">
+      <img *ngIf="pokemon.sprites" [src]="pokemon.sprites.back_default" alt="{{ pokemon.name }}" class="pokemon-image">
+    </div>
+    
+    <div class="pokemon-info">
+      <h2 class="info-title">Habilidades:</h2>
+      <ul class="abilities-list">
+        <li *ngFor="let ability of pokemon.abilities" class="ability-item">
+          {{ ability.ability.name | customFormat }}
+        </li>
+      </ul>
+      
+      <h2 class="info-title">Juegos:</h2>
+      <ul class="games-list">
+        <li *ngFor="let game of pokemon.game_indices" class="game-item">
+          {{ game.version.name | customFormat }}
+        </li>
+      </ul>
+    </div>
+  </div>

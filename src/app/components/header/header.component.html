@@ -1,0 +1,24 @@
+<header class="header">
+    <!-- Menú de hamburguesa desplegable -->
+    <div class="menu-hamburguesa">
+      <i class="fas fa-bars icon" (click)="toggleMenu()"></i>
+      <nav class="menu-opciones" [class.show]="menuVisible">
+        <ul class="menu-opciones-ul">
+          <li class="menu-opciones-li">
+            <a class="menu-opciones-li-a" routerLink="add-employee">
+              <i class="fas fa-plus-circle icon"></i> Lista de nombres
+            </a>
+          </li>
+          <li class="menu-opciones-li">
+            <a href="table" class="menu-opciones-li-a">
+              <i class="fas fa-eye icon"></i> Ver detalles
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <h1>REGISTRO DE EMPLEADOS</h1>
+  
+  </header>
+  

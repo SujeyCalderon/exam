@@ -1,0 +1,7 @@
+<div *ngFor="let pokemon of pokemons">
+    <p (click)="viewDetails(pokemon.name)">{{ pokemon.name }}</p>
+    <button (click)="toggleFavorite(pokemon)"> 
+      {{ isFavorite(pokemon) ? 'Quitar de Favoritos' : 'Agregar a Favoritos' }}
+    </button>
+  </div>
+  

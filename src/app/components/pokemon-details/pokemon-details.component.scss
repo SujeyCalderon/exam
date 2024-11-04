@@ -1,0 +1,73 @@
+/* Contenedor principal de los detalles del Pokémon */
+.pokemon-details {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Nombre del Pokémon */
+  .pokemon-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #424242;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  /* Contenedor de las imágenes del Pokémon */
+  .pokemon-images {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  /* Estilo de las imágenes */
+  .pokemon-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Contenedor de la información del Pokémon */
+  .pokemon-info {
+    margin-top: 24px;
+  }
+  
+  /* Títulos de secciones como "Habilidades" y "Juegos" */
+  .info-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #616161;
+    margin-bottom: 8px;
+  }
+  
+  /* Listas de habilidades y juegos */
+  .abilities-list,
+  .games-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+  
+  /* Elementos de la lista de habilidades y juegos */
+  .ability-item,
+  .game-item {
+    font-size: 1.1rem;
+    color: #424242;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Último elemento sin borde */
+  .abilities-list li:last-child,
+  .games-list li:last-child {
+    border-bottom: none;
+  }
+  

@@ -1,0 +1,16 @@
+<table mat-table [dataSource]="pokemonList" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let pokemon">
+        <a (click)="viewDetails(pokemon.name)">{{ pokemon.name | uppercase }}</a>
+        <button mat-icon-button (click)="toggleFavorite(pokemon.name)">
+          <mat-icon>{{ favorites.has(pokemon.name) ? 'favorite' : 'favorite_border' }}</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="['name']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['name'];"></tr>
+  </table>
+  
+
